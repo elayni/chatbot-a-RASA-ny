@@ -1,34 +1,45 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- tips
+responses:
+  utter_greet:
+  - text: Oi! Como vai?
+  - text: Olá, você tem ficado em casa?
+  utter_cheer_up:
+  - text: 'Uma coisa pra animar você:'
+    image: https://i.imgur.com/Pvf1O7q.jpg
+  utter_did_that_help:
+  - text: Como posso te ajuda?
+  utter_happy:
+  - text: Que ótimo!
+  utter_goodbye:
+  - text: Tchau!
+  - text: Fique em casa.
+  utter_iamabot:
+  - text: Eu sou um bot.
+  - text: Se eu for mulher eu sou uma bota?
+  utter_tips:
+  - text: Lave as mãos com sabão ou use álcool em gel.
+  - text: Nada de colocar a mão na boca, nariz ou olhos.
+  - text: Use a máscara para cobrir boca e nariz.
+  - text: Evite apertar as mãos de outras pessoas.
+  - text: Se apertar a mão de alguém na rua, lave-as ou passe álcool em gel.
+  - text: Fique em casa quando puder.
+  - text: Evite aglomerações.
+  - text: Barzinho a noite, só pelas lives.
+  - text: Sextou? Só se for jogando video game.
+  - text: Convide seus amigos pra sair só se for no GTA. 
+actions:
+- utter_goodbye
+- utter_greet
+- utter_tips

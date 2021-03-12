@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say a tip anytime the user ask tips
+  steps:
+  - intent: tips
+  - action: utter_tips
