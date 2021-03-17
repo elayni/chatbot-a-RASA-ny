@@ -31,6 +31,7 @@ nlu:
     - é claro
     - isso soa bem
     - correto
+    - tenho sim
 - intent: deny
   examples: |
     - não
@@ -74,8 +75,22 @@ nlu:
     - quero umas dicas
     - você pode me dar dicas?
     - como combater o covid?
-    - como combater o coronavírus? 
+    - como combater o coronavírus?
     - posso sair de casa?
     - sextou?
-
-
+    - pode me dar dicas?
+- intent: mask
+  examples: |
+    - posso usar máscara no queixo?
+    - como eu uso a máscara?
+    - tenho que usar máscara?
+    - tenho que usar máscara na rua?
+    - tenho que usar máscara em casa?
+- intent: thankfulness
+  examples: |
+    - obrigado
+    - agradeço
+    - grato
+    - gratidão
+    - agradecido
+    - obrigada

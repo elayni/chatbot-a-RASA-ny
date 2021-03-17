@@ -3,14 +3,16 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
 - goodbye
-- affirm
+- tips
+- greet
+- thankfulness
 - deny
+- affirm
 - mood_great
 - mood_unhappy
 - bot_challenge
-- tips
+- mask
 responses:
   utter_greet:
   - text: Oi! Como vai?
@@ -20,6 +22,7 @@ responses:
     image: https://i.imgur.com/Pvf1O7q.jpg
   utter_did_that_help:
   - text: Como posso te ajuda?
+  - text: Posso te ajudar em algo?
   utter_happy:
   - text: Que ótimo!
   utter_goodbye:
@@ -38,8 +41,19 @@ responses:
   - text: Evite aglomerações.
   - text: Barzinho a noite, só pelas lives.
   - text: Sextou? Só se for jogando video game.
-  - text: Convide seus amigos pra sair só se for no GTA. 
+  - text: Convide seus amigos pra sair só se for no GTA.
+  utter_mask:
+  - text: Use a máscara para cobrir boca e nariz.
+  - text: Evite sair sem sua máscara.
+  - text: Use a máscara em casa se receber visitas.
+  utter_thankfulness:
+  - text: Não há de que.
+  - text: Por nada.
 actions:
+- utter_did_that_help
 - utter_goodbye
 - utter_greet
+- utter_happy
+- utter_mask
+- utter_thankfulness
 - utter_tips

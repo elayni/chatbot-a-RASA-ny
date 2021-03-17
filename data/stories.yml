@@ -40,3 +40,31 @@ stories:
   steps:
   - intent: tips
   - action: utter_tips
+
+- story: mask path 
+  steps:
+  - intent: mask
+  - action: utter_mask
+
+- story: thankfulness path
+  steps:
+  - intent: thankfulness
+  - action: utter_thankfulness
+  - action: utter_did_that_help
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: tips
+  - action: utter_tips
+  - intent: thankfulness
+  - action: utter_thankfulness
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
