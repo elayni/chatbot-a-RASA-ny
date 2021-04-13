@@ -1,59 +1,85 @@
-version: '2.0'
-session_config:
-  session_expiration_time: 60
+--- 
+actions: 
+  - utter_did_that_help
+  - utter_goodbye
+  - utter_greet
+  - utter_happy
+  - utter_mask
+  - utter_thankfulness
+  - utter_tips
+intents: 
+  - goodbye
+  - tips
+  - greet
+  - thankfulness
+  - deny
+  - affirm
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - mask
+responses: 
+  utter_cheer_up: 
+    - 
+      image: "https://i.imgur.com/Pvf1O7q.jpg"
+      text: "Uma coisa pra animar você:"
+  utter_did_that_help: 
+    - 
+      text: "Como posso te ajuda?"
+    - 
+      text: "Posso te ajudar em algo?"
+  utter_goodbye: 
+    - 
+      text: Tchau!
+    - 
+      text: "Fique em casa."
+  utter_greet: 
+    - 
+      text: "Oi! Como vai?"
+    - 
+      text: "Olá, você tem ficado em casa?"
+  utter_happy: 
+    - 
+      text: "Que ótimo!"
+  utter_iamabot: 
+    - 
+      text: "Eu sou um bot."
+    - 
+      text: "Se eu for mulher eu sou uma bota?"
+  utter_mask: 
+    - 
+      text: "Use a máscara para cobrir boca e nariz."
+    - 
+      text: "Evite sair sem sua máscara."
+    - 
+      text: "Use a máscara em casa se receber visitas."
+  utter_thankfulness: 
+    - 
+      text: "Não há de que."
+    - 
+      text: "Por nada."
+  utter_tips: 
+    - 
+      text: "Lave as mãos com sabão ou use álcool em gel."
+    - 
+      text: "Nada de colocar a mão na boca, nariz ou olhos."
+    - 
+      text: "Use a máscara para cobrir boca e nariz."
+    - 
+      text: "Evite apertar as mãos de outras pessoas."
+    - 
+      text: "Se apertar a mão de alguém na rua, lave-as ou passe álcool em gel."
+    - 
+      text: "Fique em casa quando puder."
+    - 
+      text: "Evite aglomerações."
+    - 
+      text: "Barzinho a noite, só pelas lives."
+    - 
+      text: "Sextou? Só se for jogando video game."
+    - 
+      text: "Convide seus amigos pra sair só se for no GTA."
+session_config: 
   carry_over_slots_to_new_session: true
-intents:
-- goodbye
-- tips
-- greet
-- thankfulness
-- deny
-- affirm
-- mood_great
-- mood_unhappy
-- bot_challenge
-- mask
-responses:
-  utter_greet:
-  - text: Oi! Como vai?
-  - text: Olá, você tem ficado em casa?
-  utter_cheer_up:
-  - text: 'Uma coisa pra animar você:'
-    image: https://i.imgur.com/Pvf1O7q.jpg
-  utter_did_that_help:
-  - text: Como posso te ajuda?
-  - text: Posso te ajudar em algo?
-  utter_happy:
-  - text: Que ótimo!
-  utter_goodbye:
-  - text: Tchau!
-  - text: Fique em casa.
-  utter_iamabot:
-  - text: Eu sou um bot.
-  - text: Se eu for mulher eu sou uma bota?
-  utter_tips:
-  - text: Lave as mãos com sabão ou use álcool em gel.
-  - text: Nada de colocar a mão na boca, nariz ou olhos.
-  - text: Use a máscara para cobrir boca e nariz.
-  - text: Evite apertar as mãos de outras pessoas.
-  - text: Se apertar a mão de alguém na rua, lave-as ou passe álcool em gel.
-  - text: Fique em casa quando puder.
-  - text: Evite aglomerações.
-  - text: Barzinho a noite, só pelas lives.
-  - text: Sextou? Só se for jogando video game.
-  - text: Convide seus amigos pra sair só se for no GTA.
-  utter_mask:
-  - text: Use a máscara para cobrir boca e nariz.
-  - text: Evite sair sem sua máscara.
-  - text: Use a máscara em casa se receber visitas.
-  utter_thankfulness:
-  - text: Não há de que.
-  - text: Por nada.
-actions:
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_mask
-- utter_thankfulness
-- utter_tips
+  session_expiration_time: 60
+version: "2.0"

@@ -1,70 +1,113 @@
+--- 
+stories: 
+  - 
+    steps: 
+      - 
+        intent: greet
+      - 
+        action: utter_greet
+      - 
+        intent: mood_great
+      - 
+        action: utter_happy
+    story: "happy path"
+  - 
+    steps: 
+      - 
+        intent: greet
+      - 
+        action: utter_greet
+      - 
+        intent: mood_unhappy
+      - 
+        action: utter_cheer_up
+      - 
+        action: utter_did_that_help
+      - 
+        intent: affirm
+      - 
+        action: utter_happy
+    story: "sad path 1"
+  - 
+    steps: 
+      - 
+        intent: greet
+      - 
+        action: utter_greet
+      - 
+        intent: mood_unhappy
+      - 
+        action: utter_cheer_up
+      - 
+        action: utter_did_that_help
+      - 
+        intent: deny
+      - 
+        action: utter_goodbye
+    story: "sad path 2"
+  - 
+    steps: 
+      - 
+        intent: greet
+      - 
+        action: utter_greet
+      - 
+        intent: goodbye
+      - 
+        action: utter_goodbye
+    story: interactive_story_1
+  - 
+    steps: 
+      - 
+        intent: tips
+      - 
+        action: utter_tips
+    story: interactive_tips
+  - 
+    steps: 
+      - 
+        intent: mask
+      - 
+        action: utter_mask
+    story: "mask path"
+  - 
+    steps: 
+      - 
+        intent: thankfulness
+      - 
+        action: utter_thankfulness
+      - 
+        action: utter_did_that_help
+    story: "thankfulness path"
+  - 
+    steps: 
+      - 
+        intent: greet
+      - 
+        action: utter_greet
+      - 
+        intent: affirm
+      - 
+        action: utter_happy
+      - 
+        action: utter_did_that_help
+      - 
+        intent: tips
+      - 
+        action: utter_tips
+      - 
+        intent: thankfulness
+      - 
+        action: utter_thankfulness
+      - 
+        action: utter_did_that_help
+      - 
+        intent: deny
+      - 
+        action: utter_happy
+      - 
+        intent: goodbye
+      - 
+        action: utter_goodbye
+    story: interactive_story_1
 version: "2.0"
-
-stories:
-
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: interactive_tips
-  steps:
-  - intent: tips
-  - action: utter_tips
-
-- story: mask path 
-  steps:
-  - intent: mask
-  - action: utter_mask
-
-- story: thankfulness path
-  steps:
-  - intent: thankfulness
-  - action: utter_thankfulness
-  - action: utter_did_that_help
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: affirm
-  - action: utter_happy
-  - action: utter_did_that_help
-  - intent: tips
-  - action: utter_tips
-  - intent: thankfulness
-  - action: utter_thankfulness
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_happy
-  - intent: goodbye
-  - action: utter_goodbye

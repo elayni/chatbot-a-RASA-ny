@@ -1,96 +1,107 @@
+--- 
+nlu: 
+  - 
+    examples: |
+        - hey
+        - olá
+        - oi
+        - bom dia
+        - boa noite
+        - dia
+        - e aí?
+        - boa tarde
+        - oooi
+    intent: greet
+  - 
+    examples: |
+        - boa tarde
+        - vejo você
+        - tchau
+        - vejo você depois
+        - boa noite
+        - bye
+        - adeus
+        - tenha um bom dia
+        - vejo você por aí
+        - tchau tchau
+    intent: goodbye
+  - 
+    examples: |
+        - sim
+        - s
+        - certeza
+        - é claro
+        - isso soa bem
+        - correto
+        - tenho sim
+    intent: affirm
+  - 
+    examples: |
+        - não
+        - n
+        - nunca
+        - eu acho que não
+        - eu não gosto disso
+    intent: deny
+  - 
+    examples: |
+        - perfeito
+        - ótimo
+        - maravilha
+        - lindo
+        - eu me sinto bem
+        - eu estou ótima
+        - eu estou ótimo
+        - super bem
+        - ectremamente bem
+        - muito bem
+    intent: mood_great
+  - 
+    examples: |
+        - meu dia está horrível
+        - estou triste
+        - não me sinto bem
+        - estou desapontado
+        - super triste
+        - triste
+        - muito triste
+        - infeliz
+        - nada bem
+        - não muito bem
+        - extremamente triste
+    intent: mood_unhappy
+  - 
+    examples: |
+        - você é um bot?
+        - você é humano?
+        - estou falando com um bot?
+        - estou falando com um humano?
+    intent: bot_challenge
+  - 
+    examples: |
+        - quero umas dicas
+        - você pode me dar dicas?
+        - como combater o covid?
+        - como combater o coronavírus?
+        - posso sair de casa?
+        - sextou?
+        - pode me dar dicas?
+    intent: tips
+  - 
+    examples: |
+        - posso usar máscara no queixo?
+        - como eu uso a máscara?
+        - tenho que usar máscara?
+        - tenho que usar máscara na rua?
+        - tenho que usar máscara em casa?
+    intent: mask
+  - 
+    examples: |
+        - obrigado
+        - agradeço
+        - grato
+        - gratidão
+        - agradecido
+        - obrigada
+    intent: thankfulness
 version: "2.0"
-nlu:
-- intent: greet
-  examples: |
-    - hey
-    - olá
-    - oi
-    - bom dia
-    - boa noite
-    - dia
-    - e aí?
-    - boa tarde
-    - oooi
-- intent: goodbye
-  examples: |
-    - boa tarde
-    - vejo você
-    - tchau
-    - vejo você depois
-    - boa noite
-    - bye
-    - adeus
-    - tenha um bom dia
-    - vejo você por aí
-    - tchau tchau
-- intent: affirm
-  examples: |
-    - sim
-    - s
-    - certeza
-    - é claro
-    - isso soa bem
-    - correto
-    - tenho sim
-- intent: deny
-  examples: |
-    - não
-    - n
-    - nunca
-    - eu acho que não
-    - eu não gosto disso
-- intent: mood_great
-  examples: |
-    - perfeito
-    - ótimo
-    - maravilha
-    - lindo
-    - eu me sinto bem
-    - eu estou ótima
-    - eu estou ótimo
-    - super bem
-    - ectremamente bem
-    - muito bem
-- intent: mood_unhappy
-  examples: |
-    - meu dia está horrível
-    - estou triste
-    - não me sinto bem
-    - estou desapontado
-    - super triste
-    - triste
-    - muito triste
-    - infeliz
-    - nada bem
-    - não muito bem
-    - extremamente triste
-- intent: bot_challenge
-  examples: |
-    - você é um bot?
-    - você é humano?
-    - estou falando com um bot?
-    - estou falando com um humano?
-- intent: tips
-  examples: |
-    - quero umas dicas
-    - você pode me dar dicas?
-    - como combater o covid?
-    - como combater o coronavírus?
-    - posso sair de casa?
-    - sextou?
-    - pode me dar dicas?
-- intent: mask
-  examples: |
-    - posso usar máscara no queixo?
-    - como eu uso a máscara?
-    - tenho que usar máscara?
-    - tenho que usar máscara na rua?
-    - tenho que usar máscara em casa?
-- intent: thankfulness
-  examples: |
-    - obrigado
-    - agradeço
-    - grato
-    - gratidão
-    - agradecido
-    - obrigada
